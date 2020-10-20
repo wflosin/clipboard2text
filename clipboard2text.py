@@ -23,6 +23,7 @@ if BMP_image:
 
     text = image_to_string(png_image)
 
-    pyperclip.copy(text)
+    # The last character is usually an escape character
+    pyperclip.copy(text[:-1])
 
     remove("clipboard.png")
