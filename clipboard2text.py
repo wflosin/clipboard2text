@@ -26,6 +26,3 @@ if BMP_image:
     pyperclip.copy(text)
 
     remove("clipboard.png")
-
-else:
-    print("it did not work")
